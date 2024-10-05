@@ -6,3 +6,5 @@ class UserAdmin(admin.ModelAdmin):
     list_display = ['full_name', 'username', 'programming_language']
     ordering = ['created_at']
 
+
+admin.site.register(Profile)
