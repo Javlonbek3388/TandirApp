@@ -32,7 +32,7 @@ class AnswerViewSerializer(serializers.ModelSerializer):
         fields = '__all__'
 
 
-class ResultView(serializers.ModelSerializer):
+class ResultViewSerializer(serializers.ModelSerializer):
     class Meta:
         model = Result
         fields = '__all__'
