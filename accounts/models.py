@@ -16,6 +16,6 @@ class User(AbstractUser):
 class Profile(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     game_count = models.IntegerField(default=0)
-    points = models.IntegerField(default=0)
     win_count = models.IntegerField(default=0)
+    points = models.IntegerField(default=0)
     lose_count = models.IntegerField(default=0)
