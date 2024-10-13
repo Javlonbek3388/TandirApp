@@ -13,6 +13,7 @@ class User(BaseModel, AbstractUser):
     photo = models.ImageField(upload_to='user/', null=True, blank=True, validators=[
         FileExtensionValidator(allowed_extensions=['jpg', 'jpeg', 'png', 'svg', 'heic', 'heif'])
     ])
+    phone_number = models.CharField(max_length=12, null=True, blank=True)
 
 
 class Profile(models.Model):
